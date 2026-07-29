@@ -7053,3 +7053,7 @@ readout; the calibration frontier in-cloud is saturated on the two-sided propert
 negative side the two-crawl cross-validation the with-rails side has — the queued follow-up), or (b) a fresh
 executable-invariant increment on the offering/battery path. The population-leaderboard READOUT page (off the
 committed `calibration_sweep_*.json`) remains the next big READOUT deliverable.
+
+## Local verification — 20260729T024822Z
+
+tests_ok=True | drift-flight.org: 46.1 F | driftflight.com: 85.5 B | delta +39.4 | artifact runs/local/verify_20260729T024822Z.json

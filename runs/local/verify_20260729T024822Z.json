@@ -1,0 +1,127 @@
+{
+ "ts": "20260729T024822Z",
+ "kind": "local-verify",
+ "git_pull": {
+  "ok": true,
+  "attempts": 1,
+  "tail": "++++++++++++++++++---\n tests/test_offering.py    |  45 +++++++-\n tests/test_readout.py     |  22 +++-\n 8 files changed, 658 insertions(+), 46 deletions(-)\nFrom https://github.com/jnakagawa/agentic-readiness\n * branch            main       -> FETCH_HEAD\n   190b9b7..c87bbf9  main       -> origin/main\n"
+ },
+ "tests": {
+  "test_attribution.py": {
+   "ok": true,
+   "tail": "nominator counts only the 1 valid run\n  ok: safety-blocked codex run counted as reachability, not site evidence\n  ok: the safety-blocked model is attributed in reachability evidence\n\n9/9 tests passed\n"
+  },
+  "test_battery.py": {
+   "ok": true,
+   "tail": "essed, got ['metered_api']\n  ok: na_archetypes == profile.unclaimed in ARCHETYPES order, got ['subscription', 'digital_good', 'physical_good', 'service_booking', 'data_retrieval']\n\n12/12 tests passed\n"
+  },
+  "test_battery_instantiate.py": {
+   "ok": true,
+   "tail": " hint -> 'digital output' fallback\n  ok: a missing claim -> 'digital output' fallback (never crashes)\n  ok: instantiate_battery yields a Battery of BatteryTask (task selection only)\n\n8/8 tests passed\n"
+  },
+  "test_battery_wiring.py": {
+   "ok": true,
+   "tail": "t without --behavioral (static probes are task-independent) \u2014 ignored\n[asrs] warning: --battery auto discovered no offering archetypes for 'shop.example' \u2014 empty battery (every archetype recorded NA)\n"
+  },
+  "test_calibration.py": {
+   "ok": true,
+   "tail": "\u2014 absent (pillar max shrinks)\nrubric check 'hosted_agent_reachability' has no result \u2014 absent (pillar max shrinks)\nrubric check 'hosted_agent_reachability' has no result \u2014 absent (pillar max shrinks)\n"
+  },
+  "test_canonical_history.py": {
+   "ok": true,
+   "tail": "tted_series\n  ok: the committed series has points, got 80\n  ok: there is a latest point\n  ok: latest lands in a known band, got in-band\n  ok: real render is substantive, 906 chars\n\n32/32 tests passed\n"
+  },
+  "test_canonical_replay.py": {
+   "ok": true,
+   "tail": "\u2014 absent (pillar max shrinks)\nrubric check 'hosted_agent_reachability' has no result \u2014 absent (pillar max shrinks)\nrubric check 'hosted_agent_reachability' has no result \u2014 absent (pillar max shrinks)\n"
+  },
+  "test_fetch_replay.py": {
+   "ok": true,
+   "tail": "no-agent-native-payment, got no-agent-native-payment\n  ok: bare side zero transactability points, got 0.0\n  ok: x402 capability delta is the full 8.0 (rails earns it, bare does not)\n\n3/3 tests passed\n"
+  },
+  "test_free_tier.py": {
+   "ok": true,
+   "tail": " 2.0\ntest_full_delivery_passes\n  ok: full delivery => PASS\n  ok: full credit = 5.0, got 5.0\n  ok: content field surfaced in evidence\n  ok: steering to free meter via openapi enums\n\n11/11 tests passed\n"
+  },
+  "test_local_verify.py": {
+   "ok": true,
+   "tail": " the underlying failure tail\n  ok: _pull_once is a fast-forward-only pull of origin main, got ['git', 'pull', '--ff-only', 'origin', 'main']\n  ok: returns the underlying pull result\n\n4/4 tests passed\n"
+  },
+  "test_offering.py": {
+   "ok": true,
+   "tail": "tion, HTML-stripped (8 signals)\n  ok: /pricing evidence does NOT change the claimed set/order (score-neutral)\n  ok: strip_html removes script/style/tags, passes plain text through\n\n24/24 tests passed\n"
+  },
+  "test_offering_canonical.py": {
+   "ok": true,
+   "tail": "tity-keyed special-case is CAUGHT \u2014 claimed sets diverge under relabel, so the invariance assertion is non-vacuous\n  ok: real classify_offering restored after the negative control\n\n12/12 tests passed\n"
+  },
+  "test_protocols.py": {
+   "ok": true,
+   "tail": "st_reverse_domain_capability_ids\n  ok: reverse-domain cap -> ucp, got {'protocol': 'ucp', 'fields': ['capabilities'], 'snippet': '{\"data\": {\"caps\": [\"dev.ucp.shopping.checkout\"]}}'}\n\n7/7 tests passed\n"
+  },
+  "test_quotability.py": {
+   "ok": true,
+   "tail": "ngle-trial card shows the PROVISIONAL verdict\n  ok: behavioral overall score unchanged too\ntest_cli_trials_default_is_two\n  ok: default --trials is 2 (multi-trial by default), got 2\n\n8/8 tests passed\n"
+  },
+  "test_readout.py": {
+   "ok": true,
+   "tail": "ws the quiet fresh age note\ntest_canonical_history_no_liveness_line_without_clock\n  ok: no clock -> liveness None\n  ok: no liveness markup at all when the summary carries no clock\n\n40/40 tests passed\n"
+  },
+  "test_readout_wording.py": {
+   "ok": true,
+   "tail": "(18838 chars) \u2014 an empty render can't vacuously pass the neutrality scan\n  ok: card.html is substantive (12363 chars)\n  ok: the denylist is non-empty and every entry is a real token\n\n4/4 tests passed\n"
+  },
+  "test_reliability.py": {
+   "ok": true,
+   "tail": " clean), got 0.5\ntest_mixed_band\n  ok: two checkpoints flipped, got ['machine_payable_path', 'no_human_gate']\n  ok: stability in mixed band, got 0.733\n  ok: label mixed, got 'mixed'\n\n8/8 tests passed\n"
+  },
+  "test_rubric_wording.py": {
+   "ok": true,
+   "tail": "\n4/4 tests passed\n"
+  },
+  "test_scoring.py": {
+   "ok": true,
+   "tail": "' has no result \u2014 absent (pillar max shrinks)\nrubric check 'policies_present' has no result \u2014 absent (pillar max shrinks)\nrubric check 'reputation_signals' has no result \u2014 absent (pillar max shrinks)\n"
+  },
+  "test_shopper_hermetic.py": {
+   "ok": true,
+   "tail": "ust probe still runs `claude -p`\n  ok: the trust-probe prompt is still passed through\n  ok: trust probe still requests --output-format json\n  ok: trust probe still pins --model opus\n\n4/4 tests passed\n"
+  },
+  "test_trial_stability_v06.py": {
+   "ok": true,
+   "tail": "2 unchanged by the fix (both 0.8)\n  ok: N>=3 readings moved after the fix (committed curve superseded), moved=[3, 4, 5]\n  ok: committed pre-v0.6 N=3 was mixed (0.6 < 0.8) \u2014 the leak\n\n4/4 tests passed\n"
+  }
+ },
+ "tests_ok": true,
+ "scores": {
+  "drift-flight.org": {
+   "ok": true,
+   "overall": 46.1,
+   "grade": "F",
+   "rubric": "0.7",
+   "scored": true,
+   "pillars": {
+    "access": 100.0,
+    "legibility": 36.36363636363637,
+    "transactability": 18.75,
+    "trust": 60.0,
+    "outcome": null
+   }
+  },
+  "driftflight.com": {
+   "ok": true,
+   "overall": 85.5,
+   "grade": "B",
+   "rubric": "0.7",
+   "scored": true,
+   "pillars": {
+    "access": 100.0,
+    "legibility": 90.9090909090909,
+    "transactability": 87.5,
+    "trust": 60.0,
+    "outcome": null
+   }
+  }
+ },
+ "delta": 39.4
+}
